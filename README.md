@@ -6,11 +6,11 @@ This is a personal project to showcase an end-to-end Data Engineering project us
 * Python
 * PySpark
 * Azure Cloud Services
- * **Azure Data Factory** – Orchestration & ingestion  
- * **Azure Databricks** – Transformations & Delta Live Tables  
- * **ADLS Gen2** – Scalable data lake storage  
- * **Azure Synapse Analytics** – Data warehouse  
- * **Power BI** – Business reporting & insights   
+  * **Azure Data Factory** – Orchestration & ingestion  
+  * **Azure Databricks** – Transformations & Delta Live Tables  
+  * **ADLS Gen2** – Scalable data lake storage  
+  * **Azure Synapse Analytics** – Data warehouse  
+  * **Power BI** – Business reporting & insights   
 ## Overview
 ### 1. Data Ingestion (Extraction)
 * Dataset sourced from Kaggle, contains 5 datasets in CSV and JSON formats.
@@ -25,7 +25,7 @@ This is a personal project to showcase an end-to-end Data Engineering project us
 * Data is structured into **Star Schema models (Gold Layer)** for analytics and reporting.
 * Processed data is sent to **Azure Synapse Analytics** for warehousing.
 * **Power BI** connects to Synapse for **real-time reporting and dashboards**.
-* <img width="768" height="105" alt="Delta_Live_Tables_Architecture_v2" src="https://github.com/user-attachments/assets/5e0067f3-5a00-4290-bc6b-89328012a0d8" />
+ <img width="768" height="105" alt="Delta_Live_Tables_Architecture_v2" src="https://github.com/user-attachments/assets/5e0067f3-5a00-4290-bc6b-89328012a0d8" />
 
 ## Key Learnings
 This project highlights the power of **Delta Live Tables** in simplifying ETL pipelines, enabling automated data quality checks, and providing reliable streaming + batch ingestion for modern analytics.
