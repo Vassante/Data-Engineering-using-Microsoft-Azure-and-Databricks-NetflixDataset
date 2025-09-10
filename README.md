@@ -11,5 +11,12 @@ This is a personal project to showcase an end-to-end Data Engineering project us
   * Azure Databricks
   * PowerBI
 ## Overview
+### 1. Data Ingestion (Extraction)
+* Dataset sourced from Kaggle, contains 5 datasets in CSV and JSON formats.
+* Created 4 containers for data storage in ADLS Gen 2 - Raw, Bronze, Silver, Gold.
+* 4 files were ingested directly from Github using API method and stored in the Bronze container- Incremental data loading using Databricks Autoloader.
+* 1 file was manually uploaded to ADLS Gen 2 in the Raw container.
+### 2. Medallion Architecture (Transformation)
+### 3. Final Data for Analysis (Load)
 ## Key Learnings
 ## Conclusion
