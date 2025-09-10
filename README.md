@@ -14,13 +14,13 @@ This is a personal project to showcase an end-to-end Data Engineering project us
 ## Overview
 ### 1. Data Ingestion (Extraction)
 * Dataset sourced from Kaggle, contains 5 datasets in CSV and JSON formats.
-* Created 4 containers for data storage in ADLS Gen 2 - Raw, Bronze, Silver, Gold.
+* Created 3 containers for data storage in ADLS Gen 2 - Bronze, Silver, Gold.
 * 4 files were ingested directly from Github using API method and stored in the Bronze container- Incremental data loading using Databricks Autoloader.
-* 1 file was manually uploaded to ADLS Gen 2 in the Raw container.
+* 1 file was manually uploaded to the Bronze container.
 ### 2. Medallion Architecture (Transformation)
-* **Bronze** – Raw incremental data  
-* **Silver** – Cleaned and conformed data  
-* **Gold** – Aggregated, business-ready data (Star Schema) 
+* **Bronze** – Raw incremental data using **Databricks Autoloader**  
+* **Silver** – Cleaned and conformed data using **parameterized PySpark notebooks**. 
+* **Gold** – Aggregated, business-ready data (Star Schema) using **Delta Live Tables**. 
 ### 3. Final Data for Analysis (Load)
 * Data is structured into **Star Schema models (Gold Layer)** for analytics and reporting.
 * Processed data is sent to **Azure Synapse Analytics** for warehousing.
@@ -28,4 +28,7 @@ This is a personal project to showcase an end-to-end Data Engineering project us
  <img width="768" height="105" alt="Delta_Live_Tables_Architecture_v2" src="https://github.com/user-attachments/assets/5e0067f3-5a00-4290-bc6b-89328012a0d8" />
 
 ## Key Learnings
-This project highlights the power of **Delta Live Tables** in simplifying ETL pipelines, enabling automated data quality checks, and providing reliable streaming + batch ingestion for modern analytics.
+* **Delta Live Tables (DLT):** Simplified the ETL pipeline by automating data quality checks, managing dependencies, and ensuring reliable streaming + batch ingestion.  
+* **Databricks Autoloader:** Enabled seamless and incremental ingestion of raw files from GitHub into the Bronze layer with schema inference and efficient scaling.  
+* **Parameterized Notebooks:** Improved flexibility and reusability in the Silver layer transformations by allowing dynamic input parameters for folder paths, table names, and run-time configurations.  
+
