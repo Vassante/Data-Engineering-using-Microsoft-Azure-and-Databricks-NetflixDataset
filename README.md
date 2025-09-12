@@ -26,7 +26,8 @@ This is a personal project to showcase an end-to-end Data Engineering project us
 * Data is structured into **Star Schema models (Gold Layer)** for analytics and reporting.
 * Processed data is sent to **Azure Synapse Analytics** for warehousing.
 * **Power BI** connects to Synapse for **real-time reporting and dashboards**.
- <img width="768" height="105" alt="Delta_Live_Tables_Architecture_v2" src="https://github.com/user-attachments/assets/5e0067f3-5a00-4290-bc6b-89328012a0d8" />
+#### Cloud Architecture
+<img width="1742" height="1040" alt="Architecture Diagram" src="https://github.com/user-attachments/assets/9479a16b-fb4a-49c5-bc65-b97d99e7a204" />
 
 ## Key Learnings
 * **Delta Live Tables (DLT):** Simplified the ETL pipeline by automating data quality checks, managing dependencies, and ensuring reliable streaming + batch ingestion.  
