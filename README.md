@@ -10,7 +10,8 @@ This is a personal project to showcase an end-to-end Data Engineering project us
   * **Azure Databricks** – Transformations & Delta Live Tables  
   * **ADLS Gen2** – Scalable data lake storage  
   * **Azure Synapse Analytics** – Data warehouse  
-  * **Power BI** – Business reporting & insights   
+  * **Power BI** – Business reporting & insights
+  * **Azure Active Directory** – Security & RBAC   
 ## Overview
 ### 1. Data Ingestion (Extraction)
 * Dataset sourced from Kaggle, contains 5 datasets in CSV and JSON formats.
