@@ -1,4 +1,4 @@
-# Netflix Data Engineering using Microsoft Azure and Databricks: End-to-End Data Engineering Project
+# Netflix - Data Engineering using Microsoft Azure and Databricks: End-to-End Data Engineering Project
 ## Introduction
 This is a personal project to showcase an end-to-end Data Engineering project using Microsoft Azure, Databricks, and Delta Live Tables(DLT). This project demonstrates data ingestion using Azure Data Factory(ADF) and Databricks AutoLoader, processing the data through a Medallion Architecture(Bronze, Silver, Gold), and business reporting using PowerBI.
 ## Techstack
