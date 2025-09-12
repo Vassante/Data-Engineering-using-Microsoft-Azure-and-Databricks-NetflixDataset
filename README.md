@@ -26,7 +26,7 @@ This is a personal project to showcase an end-to-end Data Engineering project us
 * Data is structured into **Star Schema models (Gold Layer)** for analytics and reporting.
 * Processed data is sent to **Azure Synapse Analytics** for warehousing.
 * **Power BI** connects to Synapse for **real-time reporting and dashboards**.
-#### Cloud Architecture
+### Cloud Architecture
 <img width="1742" height="1040" alt="Architecture Diagram" src="https://github.com/user-attachments/assets/9479a16b-fb4a-49c5-bc65-b97d99e7a204" />
 
 ## Key Learnings
